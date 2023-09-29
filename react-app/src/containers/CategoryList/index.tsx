@@ -125,7 +125,7 @@ const CategoryList = () => {
           Sign Out
         </Button>
       </div>
-      <h1>List of Category</h1>
+      <h1 style={{ fontSize: "2.5em" }}>List of Category</h1>
       <div
         style={{
           display: "flex",

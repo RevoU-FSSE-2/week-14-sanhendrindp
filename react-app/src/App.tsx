@@ -6,6 +6,7 @@ import {
   CategoryEdit,
   Login,
   Register,
+  AccountInfo,
 } from "./pages";
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
     },
     {
       path: "/account",
-      element: <>Account</>,
+      element: <AccountInfo />,
     },
   ]);
 

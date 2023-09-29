@@ -14,7 +14,7 @@ describe("Test login form", () => {
     expect(title).toBeDefined();
   });
 
-  test("Label Email render correctly", async () => {
+  test("Label email render correctly", async () => {
     render(
       <BrowserRouter>
         <LoginForm onSubmit={mockProps} />
@@ -24,7 +24,7 @@ describe("Test login form", () => {
     expect(title).toBeDefined();
   });
 
-  test("Label Password render correctly", async () => {
+  test("Label password render correctly", async () => {
     render(
       <BrowserRouter>
         <LoginForm onSubmit={mockProps} />
@@ -34,7 +34,7 @@ describe("Test login form", () => {
     expect(title).toBeDefined();
   });
 
-  test("Button Login render correctly", async () => {
+  test("Button login render correctly", async () => {
     render(
       <BrowserRouter>
         <LoginForm onSubmit={mockProps} />
@@ -44,7 +44,7 @@ describe("Test login form", () => {
     expect(title).toBeDefined();
   });
 
-  test("Button Register render correctly", async () => {
+  test("Button register render correctly", async () => {
     render(
       <BrowserRouter>
         <LoginForm onSubmit={mockProps} />

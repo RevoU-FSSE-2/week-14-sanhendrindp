@@ -14,7 +14,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  test("Label Name render correctly", async () => {
+  test("Label name render correctly", async () => {
     render(
       <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
@@ -24,7 +24,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  test("Label Email render correctly", async () => {
+  test("Label email render correctly", async () => {
     render(
       <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
@@ -34,7 +34,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  test("Label Password render correctly", async () => {
+  test("Label password render correctly", async () => {
     render(
       <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
@@ -44,7 +44,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  test("Button Register render correctly", async () => {
+  test("Button register render correctly", async () => {
     render(
       <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
@@ -54,7 +54,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  test("Button Back render correctly", async () => {
+  test("Button back render correctly", async () => {
     render(
       <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />

@@ -106,20 +106,36 @@ const CategoryList = () => {
 
   return (
     <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "right",
+          alignItems: "center",
+          marginBottom: "70px",
+        }}
+      >
+        <Button
+          style={{ marginRight: "10px" }}
+          type={"primary"}
+          onClick={() => navigate("/account")}
+        >
+          Account Info
+        </Button>
+        <Button type={"default"} onClick={handleSignout}>
+          Sign Out
+        </Button>
+      </div>
       <h1>List of Category</h1>
       <div
         style={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "left",
           alignItems: "center",
           marginBottom: "20px",
         }}
       >
         <Button type={"primary"} onClick={() => navigate("/category/new")}>
           Add Category
-        </Button>
-        <Button type={"default"} onClick={handleSignout}>
-          Sign Out
         </Button>
       </div>
       <CategoryListComponent columns={columns} data={categories} />

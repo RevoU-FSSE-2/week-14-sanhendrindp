@@ -1,14 +1,14 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import LoginForm from ".";
-import { MemoryRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 describe("Test login form", () => {
   const mockProps = jest.fn();
   test("Title render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <LoginForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Login Page");
     expect(title).toBeDefined();
@@ -16,9 +16,9 @@ describe("Test login form", () => {
 
   test("Label Email render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <LoginForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Email");
     expect(title).toBeDefined();
@@ -26,9 +26,9 @@ describe("Test login form", () => {
 
   test("Label Password render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <LoginForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Password");
     expect(title).toBeDefined();
@@ -36,9 +36,9 @@ describe("Test login form", () => {
 
   test("Button Login render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <LoginForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Login");
     expect(title).toBeDefined();
@@ -46,9 +46,9 @@ describe("Test login form", () => {
 
   test("Button Register render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <LoginForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Register");
     expect(title).toBeDefined();
@@ -56,9 +56,9 @@ describe("Test login form", () => {
 
   test("onSubmit for login page works correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <LoginForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const emailInput = screen.getByPlaceholderText("Your email");
     const passwordInput = screen.getByPlaceholderText("Your password");

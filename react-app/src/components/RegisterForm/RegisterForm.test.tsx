@@ -1,14 +1,14 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import RegisterForm from ".";
 
 describe("Test register form", () => {
   const mockProps = jest.fn();
   test("Title render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Register Page");
     expect(title).toBeDefined();
@@ -16,9 +16,9 @@ describe("Test register form", () => {
 
   test("Label Name render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Name");
     expect(title).toBeDefined();
@@ -26,9 +26,9 @@ describe("Test register form", () => {
 
   test("Label Email render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Email");
     expect(title).toBeDefined();
@@ -36,9 +36,9 @@ describe("Test register form", () => {
 
   test("Label Password render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Password");
     expect(title).toBeDefined();
@@ -46,9 +46,9 @@ describe("Test register form", () => {
 
   test("Button Register render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Register");
     expect(title).toBeDefined();
@@ -56,9 +56,9 @@ describe("Test register form", () => {
 
   test("Button Back render correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const title = screen.getByText("Back");
     expect(title).toBeDefined();
@@ -66,9 +66,9 @@ describe("Test register form", () => {
 
   test("onSubmit for register page works correctly", async () => {
     render(
-      <MemoryRouter>
+      <BrowserRouter>
         <RegisterForm onSubmit={mockProps} />
-      </MemoryRouter>
+      </BrowserRouter>
     );
     const nameInput = screen.getByPlaceholderText("Your name");
     const emailInput = screen.getByPlaceholderText("Your email");

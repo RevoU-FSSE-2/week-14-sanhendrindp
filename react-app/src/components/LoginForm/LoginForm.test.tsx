@@ -4,7 +4,7 @@ import { MemoryRouter } from "react-router-dom";
 
 describe("Test login form", () => {
   const mockProps = jest.fn();
-  it("Title render correctly", async () => {
+  test("Title render correctly", async () => {
     render(
       <MemoryRouter>
         <LoginForm onSubmit={mockProps} />
@@ -14,7 +14,7 @@ describe("Test login form", () => {
     expect(title).toBeDefined();
   });
 
-  it("Label Email render correctly", async () => {
+  test("Label Email render correctly", async () => {
     render(
       <MemoryRouter>
         <LoginForm onSubmit={mockProps} />
@@ -24,7 +24,7 @@ describe("Test login form", () => {
     expect(title).toBeDefined();
   });
 
-  it("Label Password render correctly", async () => {
+  test("Label Password render correctly", async () => {
     render(
       <MemoryRouter>
         <LoginForm onSubmit={mockProps} />
@@ -34,7 +34,7 @@ describe("Test login form", () => {
     expect(title).toBeDefined();
   });
 
-  it("Button Login render correctly", async () => {
+  test("Button Login render correctly", async () => {
     render(
       <MemoryRouter>
         <LoginForm onSubmit={mockProps} />
@@ -44,7 +44,7 @@ describe("Test login form", () => {
     expect(title).toBeDefined();
   });
 
-  it("Button Register render correctly", async () => {
+  test("Button Register render correctly", async () => {
     render(
       <MemoryRouter>
         <LoginForm onSubmit={mockProps} />
@@ -54,7 +54,7 @@ describe("Test login form", () => {
     expect(title).toBeDefined();
   });
 
-  it("onSubmit for login page works correctly", async () => {
+  test("onSubmit for login page works correctly", async () => {
     render(
       <MemoryRouter>
         <LoginForm onSubmit={mockProps} />

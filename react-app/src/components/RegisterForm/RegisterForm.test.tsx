@@ -4,7 +4,7 @@ import RegisterForm from ".";
 
 describe("Test register form", () => {
   const mockProps = jest.fn();
-  it("Title render correctly", async () => {
+  test("Title render correctly", async () => {
     render(
       <MemoryRouter>
         <RegisterForm onSubmit={mockProps} />
@@ -14,7 +14,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  it("Label Name render correctly", async () => {
+  test("Label Name render correctly", async () => {
     render(
       <MemoryRouter>
         <RegisterForm onSubmit={mockProps} />
@@ -24,7 +24,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  it("Label Email render correctly", async () => {
+  test("Label Email render correctly", async () => {
     render(
       <MemoryRouter>
         <RegisterForm onSubmit={mockProps} />
@@ -34,7 +34,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  it("Label Password render correctly", async () => {
+  test("Label Password render correctly", async () => {
     render(
       <MemoryRouter>
         <RegisterForm onSubmit={mockProps} />
@@ -44,7 +44,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  it("Button Register render correctly", async () => {
+  test("Button Register render correctly", async () => {
     render(
       <MemoryRouter>
         <RegisterForm onSubmit={mockProps} />
@@ -54,7 +54,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  it("Button Back render correctly", async () => {
+  test("Button Back render correctly", async () => {
     render(
       <MemoryRouter>
         <RegisterForm onSubmit={mockProps} />
@@ -64,7 +64,7 @@ describe("Test register form", () => {
     expect(title).toBeDefined();
   });
 
-  it("onSubmit for register page works correctly", async () => {
+  test("onSubmit for register page works correctly", async () => {
     render(
       <MemoryRouter>
         <RegisterForm onSubmit={mockProps} />

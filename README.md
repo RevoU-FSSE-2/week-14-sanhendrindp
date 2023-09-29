@@ -56,3 +56,19 @@ After that, create a file with the name **.babelrc** and place it in the root fo
   ]
 }
 ```
+
+# Unit Testing Result
+
+For the unit testing that I have done, I made it for all components in my react app including **LoginForm**, **RegisterForm**, **AccountInfoForm**, **CategoryList**, and **CategoryForm** components. All this test working correctly to render the pages and do the event like onSubmit when the submit button is clicked.
+
+<p align="center">
+<img src="images/Components Test.PNG"> 
+</p>
+
+For mock data from API testing, which is in containers folder, I only did a few things, including in **Register**, **Login**, and **CategoryEdit** containers. Everything is running correctly.
+
+<p align="center">
+<img src="images/Containers Test.PNG"> 
+</p>
+
+---
